@@ -1,12 +1,13 @@
-#include "output.h"
-#include <iostream>
 
-using std::cout;
+#include "output.h"
+
+
+//using std::cout;
 
 
 int main() 
 {
-	cout << "hello";
+	say_hello();
 
 	return 0;
 }
