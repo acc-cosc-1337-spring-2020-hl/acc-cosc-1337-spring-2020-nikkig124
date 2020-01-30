@@ -1,13 +1,10 @@
-
-/*
 #include "expressions.h"
 
 
 //example
 int add_numbers(int num1, int num2)
 {
-	return 0;
-	//num1 + num2;
+	return num1 + num2;
 }
 
 //write code for multiply_numbers function here
@@ -16,8 +13,7 @@ int add_numbers(int num1, int num2)
 //mutiply
 int  multiply_numbers(int num1, int num2)
 {
-	return 0;
-		//num1 * num2;
+	return num1 * num2;
 }
-*/
+
 
