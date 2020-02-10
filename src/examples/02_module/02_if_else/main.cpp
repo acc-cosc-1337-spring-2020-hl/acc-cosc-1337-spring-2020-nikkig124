@@ -14,7 +14,7 @@ int main()
 {
 	int year;
 
-	cout << "enter a number: ";
+	cout << "enter a year between 1925 to 2014: ";
 	//assign the number to the value variable
 	cin >> year;
 
