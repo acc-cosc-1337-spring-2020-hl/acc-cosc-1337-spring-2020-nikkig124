@@ -9,3 +9,22 @@
 //returns 'Option 4' when value 4
 //return 'Invalid Option' otherwise
 
+string str_to_num(int num) {
+	switch (num)
+	{
+	case 1:
+		return "Option 1";
+		break;
+	case 2:
+		return "Option 2";
+		break;
+	case 3:
+		return "Option 3";
+		break;
+	case 4:
+		return "Option 4";
+		break;
+	default: "Invalid option"
+	}
+}
+

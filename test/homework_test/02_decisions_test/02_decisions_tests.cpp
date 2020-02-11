@@ -5,3 +5,6 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
+TEST_CASE("Test GPA function") {
+	REQUIRE(true == true);
+}
