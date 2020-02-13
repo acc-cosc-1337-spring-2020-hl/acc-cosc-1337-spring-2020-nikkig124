@@ -1,8 +1,7 @@
 #include "for_ranged.h"
-#include<iostream>
-#include<vector>
 
 using std::vector;
+using std::cout;
 
 /*
 Write code for loop_string_w_index that accepts a string parameter.
@@ -16,6 +15,14 @@ s
 t
 */
 
+void loop_string_by_index(const string & str)
+{
+	for (int i = 0; i < str.length(); ++i) {
+		cout << str[i] << "\n";
+	}
+}
+
+
 
 /*
 Write code for loop_string_w_index that accepts a string parameter.
@@ -28,15 +35,12 @@ e
 s
 t
 */
-
-
-void loop_vector_w_index() 
+void loop_string_w_auto(const string & str2)
 {
-	vector<int> nums = {9, 10, 99, 5,67 };
-
-	for (int i = 0; i < nums.size(); ++i) 
-	{
-		std::cout << nums[i] << "\n";
+	for (auto i : str2) {
+		cout << i << "\n";
 	}
 }
+
+
 
