@@ -10,12 +10,15 @@
  */
 #ifndef TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
 #define TWOBLUECUBES_SINGLE_INCLUDE_CATCH_HPP_INCLUDED
- // start catch.hpp
 
+
+
+ // start catch.hpp
 
 #define CATCH_VERSION_MAJOR 2
 #define CATCH_VERSION_MINOR 2
 #define CATCH_VERSION_PATCH 2
+
 
 #ifdef __clang__
 #    pragma clang system_header
@@ -11852,7 +11855,7 @@ namespace Catch {
 				case Unit::Nanoseconds:
 					return "ns";
 				case Unit::Microseconds:
-					return "µs";
+					return "ï¿½s";
 				case Unit::Milliseconds:
 					return "ms";
 				case Unit::Seconds:
