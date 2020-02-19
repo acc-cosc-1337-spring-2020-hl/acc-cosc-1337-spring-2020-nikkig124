@@ -1,4 +1,6 @@
 #include "dna.h"
+
+using std::swap;
 /*
 Write code for function get_gc_content that accepts
 a const reference string parameter and returns a double.
@@ -7,7 +9,15 @@ Iterate string count Gs and Cs, divide count by string length.
 Return quotient.
 */
 
-
+double get_gc_content(const string &dna){
+    double sum = 0;
+    for(int i = 0; i < dna.length(); i++) {
+        if (dna[i] == 'A' || dna[i] == 'G') {
+            sum++;
+        }
+    }
+    return sum / dna.length();
+}
 
 
 /*
@@ -16,6 +26,17 @@ accepts a string parameter and returns a string reversed.
 */
 
 
+string get_reverse_string(string str){
+
+    int n = str.length();
+
+    // Swap character starting from two
+    // corners
+    for (int i = 0; i < n / 2; i++) {
+        swap(str[i], str[n - i - 1]);
+    }
+    return str;
+}
 
 /*
 Write prototype for function get_dna_complement that
@@ -27,4 +48,26 @@ b. iterate local string variable and
 c. return string
 
 */
+
+string get_dna_complement(string dna){
+    string reversed_str = get_reverse_string(dna);
+    for(char & i : reversed_str) {
+       switch (i){
+           case 'A':
+               i = 'T';
+               break;
+           case 'T':
+               i = 'A';
+               break;
+           case 'C':
+               i = 'G';
+               break;
+           case 'G':
+               i = 'C';
+               break;
+       }
+    }
+    return reversed_str;
+}
+
 

@@ -2,6 +2,7 @@
 
 project("cosc1337")
 include_directories(inc)
+set(CMAKE_CXX_STANDARD 11)
 
 MACRO(SUBDIRLIST result curdir)
   FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
