@@ -13,7 +13,7 @@ Return quotient.
 double get_gc_content(const string &dna){
     double sum = 0;
     for(int i = 0; i < dna.length(); i++) {
-        if (dna[i] == 'A' || dna[i] == 'G') {
+        if (dna[i] == 'C' || dna[i] == 'G') {
             sum++;
         }
     }

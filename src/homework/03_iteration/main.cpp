@@ -17,7 +17,7 @@ user enters a y or Y.
 int main() 
 {
     char progRunning;
-    
+
     do {
         string dna;
         int choice;
