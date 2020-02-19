@@ -1,6 +1,7 @@
 #include "decisions.h"
 //write include statement for decisions header
 #include <string>
+
 using std::string;
 //Write code for function get_grade_points that accepts a string letter_grade and returns 
 //the grade_points for as follows:
@@ -47,8 +48,9 @@ double calculate_gpa(int credit_hours, double credit_points)
 	if (credit_hours == 0){
 		return -1;
 	}
-	
+
 	return credit_points / credit_hours;
+
 }
 
 
