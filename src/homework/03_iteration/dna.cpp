@@ -1,6 +1,7 @@
 #include "dna.h"
 
 using std::swap;
+using std::string;
 /*
 Write code for function get_gc_content that accepts
 a const reference string parameter and returns a double.
