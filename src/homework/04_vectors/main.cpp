@@ -17,7 +17,7 @@ Program continues until user decides to exit.
 */
 int main()
 {
-	vector<int> vec = { 8, 4, 20, 88, 66, 99 };
+	//vector<int> vec = { 8, 4, 20, 88, 66, 99 };
 
 	int choice = 1;
 
@@ -25,17 +25,34 @@ int main()
 		cout << "Press 1 for get Max from Vector, or Press 2 for Get Primes or press any other key to quit \n";
 		cin >> choice;
 		if (choice == 1) {
+			vector<int> vec;
+			cout << "Enter 5 numbers \n";
+			int i = 1;
+			while (i <= 5) {
+				int num;
+				cout << "Num" << i << ": \n";
+				cin >> num;
+				cout << "\n";
+				vec.push_back(num);
+				++i;
+			}
 			int max = get_max_from_vector(vec);
-			cout << "\n Max number from vector is : " << max + "\n";
+			cout << "Max number from vector is : " << max << "\n \n";
+			
 		}
 		else {
 			int num;
-			cout << "\n Enter a number \n";
+			cout << "Enter a number \n";
 
 			cin >> num;
 			vector<int> primes = vector_of_primes(num);
-			cout << "\n list of primes: " << num << "\n";
 
+			cout << "list of primes: \n \n";
+
+			for (int prime : primes) {
+				cout << prime << "\n";
+			}
+			cout << "\n";
 		}
 	}
 
