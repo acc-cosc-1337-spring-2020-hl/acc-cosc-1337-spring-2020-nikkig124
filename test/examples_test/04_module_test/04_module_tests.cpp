@@ -18,6 +18,11 @@ TEST_CASE("test deposit") {
 	account.deposit(50);
 
 	REQUIRE(account.get_balance() == 200);
+
+	
+	//REQUIRE(account.get_balance() == 200);
+	REQUIRE_THROWS_AS(account.deposit(-50), InvalidAmountException);
+
 }
 
 TEST_CASE("test withdraw") {
@@ -27,6 +32,11 @@ TEST_CASE("test withdraw") {
 	account.withdraw(50);
 
 	REQUIRE(account.get_balance() == 100);
+
+	REQUIRE_THROWS_AS(account.withdraw(200), InvalidAmountException);
+
+	REQUIRE_THROWS_AS(account.withdraw(-200), InvalidAmountException);
+
 }
 
 
