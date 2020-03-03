@@ -7,8 +7,9 @@ using std::cout;
 
 int main()
 {
-	BankAccount account(10);
-
+	
+	BankAccount account = 60;
+	cout << account.get_balance();
 	int balance = account.get_balance();
 
 

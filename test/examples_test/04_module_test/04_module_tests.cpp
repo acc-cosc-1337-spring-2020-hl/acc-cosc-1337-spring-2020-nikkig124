@@ -39,4 +39,24 @@ TEST_CASE("test withdraw") {
 
 }
 
+TEST_CASE("test open account") {
+	BankAccount newAccount;
 
+	REQUIRE(newAccount.get_balance() == 0);
+
+	REQUIRE_THROWS_AS(newAccount.open(15), InvalidAmountException);
+
+	newAccount.open(150);
+
+	REQUIRE(newAccount.get_balance() == 150);
+}
+
+TEST_CASE("test open on account that is open") {
+	BankAccount account(100);
+
+	REQUIRE(account.get_balance() == 100);
+
+	REQUIRE_THROWS_AS(account.open(150), InvalidAmountException);
+
+
+}

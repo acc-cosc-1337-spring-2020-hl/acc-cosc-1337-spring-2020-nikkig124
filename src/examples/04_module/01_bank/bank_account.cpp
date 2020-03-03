@@ -24,3 +24,17 @@ void BankAccount::withdraw(int amount)
 		balance -= amount;
 	}
 }
+
+void BankAccount::open(int amount)
+{
+	if (balance > 0) {
+		throw InvalidAmountException("Account already open, use deposit");
+	}
+
+	if (amount >= min_open_balance) {
+		deposit(amount);
+	}
+	else {
+		throw InvalidAmountException("Opening Deposit must be at least $25");
+	}
+}
