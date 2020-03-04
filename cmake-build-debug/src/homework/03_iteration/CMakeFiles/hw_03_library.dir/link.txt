@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libhw_03_library.a  CMakeFiles/hw_03_library.dir/dna.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libhw_03_library.a

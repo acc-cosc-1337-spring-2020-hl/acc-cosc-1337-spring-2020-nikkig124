@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libcw_05_library.a  CMakeFiles/cw_05_library.dir/rectangle.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libcw_05_library.a

@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libex_03_01_library.a  CMakeFiles/ex_03_01_library.dir/while.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libex_03_01_library.a
