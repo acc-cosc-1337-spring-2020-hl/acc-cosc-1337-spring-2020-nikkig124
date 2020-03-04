@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libex_03_06_library.a  CMakeFiles/ex_03_06_library.dir/vec.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libex_03_06_library.a

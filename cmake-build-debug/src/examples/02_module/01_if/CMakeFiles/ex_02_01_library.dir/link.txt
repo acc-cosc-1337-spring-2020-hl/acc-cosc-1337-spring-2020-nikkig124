@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libex_02_01_library.a  CMakeFiles/ex_02_01_library.dir/if.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libex_02_01_library.a

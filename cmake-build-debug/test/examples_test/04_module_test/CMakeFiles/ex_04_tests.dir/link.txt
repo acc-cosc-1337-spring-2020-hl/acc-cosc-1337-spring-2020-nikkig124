@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ex_04_tests.dir/04_module_tests.cpp.o  -o ex_04_tests ../../../src/examples/04_module/01_bank/libex_04_01_library.a 

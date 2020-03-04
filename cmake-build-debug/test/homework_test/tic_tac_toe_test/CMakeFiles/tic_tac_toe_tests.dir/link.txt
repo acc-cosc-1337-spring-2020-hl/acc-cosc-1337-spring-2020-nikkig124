@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tic_tac_toe_tests.dir/tic_tac_toe_test.cpp.o  -o tic_tac_toe_tests ../../../src/homework/tic_tac_toe/libtic_tac_toe_library.a 

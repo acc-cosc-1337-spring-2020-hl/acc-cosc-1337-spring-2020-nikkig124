@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/examples/03_module/01_while/while.h
+iostream
+-
+string
+-
+
+/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while/do_while.cpp
+iostream
+-
+do_while.h
+/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while/do_while.h
+while.h
+/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while/while.h
+
+/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while/do_while.h
+
+/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while/main.cpp
+do_while.h
+/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while/do_while.h
+

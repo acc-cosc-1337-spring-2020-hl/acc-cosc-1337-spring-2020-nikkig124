@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cw_01_tests.dir/types_tests.cpp.o  -o cw_01_tests ../../../src/classwork/01_assign/libcw_01_library.a 

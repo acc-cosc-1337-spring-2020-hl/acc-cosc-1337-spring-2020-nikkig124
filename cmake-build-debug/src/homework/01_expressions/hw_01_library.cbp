@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hw_01_library"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\src\classwork\;CMake Files\src\classwork\02_assign\;CMake Files\src\examples\;CMake Files\src\examples\02_module\;CMake Files\src\examples\02_module\01_if\;CMake Files\src\examples\02_module\02_if_else\;CMake Files\src\examples\02_module\03_switch\;CMake Files\src\homework\;CMake Files\src\homework\01_expressions\;CMake Files\test\;CMake Files\test\classwork_test\;CMake Files\test\classwork_test\02_assign_test\;CMake Files\test\examples_test\;CMake Files\test\examples_test\02_module_test\;CMake Files\test\homework_test\;CMake Files\test\homework_test\01_expressions_test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw_01_exe">
+				<Option output="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/hw_01_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/inc"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/01_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/02_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/03_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/04_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/05_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/01_output"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/02_variables"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/03_input"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/04_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/05_auto"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/01_if"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/02_if_else"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/03_switch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/01_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/02_for"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/04_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/05_value_and_reference_params"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/06_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/07_vectors_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/01_bank"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/02_gui"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/07_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/08_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/09_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/01_shapes"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/02_clock"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/01_ref_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/02_dynamic_memory"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/03_memory_leak"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/04_dangling_pointer"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/05_raii"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/06_destructors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/07_class_copy"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/08_rule_of_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/09_rule_of_5"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/01_arrays_mem"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/02_arrays_access"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/03_arrays_for_range"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/04_arrays_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/05_arrays_functions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/06_arrays_char"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/07_arrays_dyn_ch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/08_arrays_dyn_1"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/09_arrays_dyn_2"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/10_arrays_dyn_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/13_module/01_recursion"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/02_decisions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/03_iteration"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/04_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/tic_tac_toe"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 hw_01_exe"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw_01_exe/fast">
+				<Option output="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/hw_01_exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/inc"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/01_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/02_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/03_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/04_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/05_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/01_output"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/02_variables"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/03_input"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/04_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/05_auto"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/01_if"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/02_if_else"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/03_switch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/01_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/02_for"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/04_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/05_value_and_reference_params"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/06_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/07_vectors_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/01_bank"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/02_gui"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/07_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/08_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/09_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/01_shapes"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/02_clock"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/01_ref_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/02_dynamic_memory"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/03_memory_leak"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/04_dangling_pointer"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/05_raii"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/06_destructors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/07_class_copy"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/08_rule_of_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/09_rule_of_5"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/01_arrays_mem"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/02_arrays_access"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/03_arrays_for_range"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/04_arrays_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/05_arrays_functions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/06_arrays_char"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/07_arrays_dyn_ch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/08_arrays_dyn_1"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/09_arrays_dyn_2"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/10_arrays_dyn_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/13_module/01_recursion"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/02_decisions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/03_iteration"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/04_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/tic_tac_toe"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 hw_01_exe/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw_01_library">
+				<Option output="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/libhw_01_library.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/inc"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/01_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/02_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/03_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/04_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/05_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/01_output"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/02_variables"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/03_input"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/04_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/05_auto"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/01_if"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/02_if_else"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/03_switch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/01_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/02_for"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/04_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/05_value_and_reference_params"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/06_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/07_vectors_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/01_bank"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/02_gui"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/07_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/08_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/09_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/01_shapes"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/02_clock"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/01_ref_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/02_dynamic_memory"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/03_memory_leak"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/04_dangling_pointer"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/05_raii"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/06_destructors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/07_class_copy"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/08_rule_of_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/09_rule_of_5"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/01_arrays_mem"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/02_arrays_access"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/03_arrays_for_range"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/04_arrays_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/05_arrays_functions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/06_arrays_char"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/07_arrays_dyn_ch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/08_arrays_dyn_1"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/09_arrays_dyn_2"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/10_arrays_dyn_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/13_module/01_recursion"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/02_decisions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/03_iteration"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/04_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/tic_tac_toe"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 hw_01_library"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hw_01_library/fast">
+				<Option output="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/libhw_01_library.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/inc"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/01_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/02_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/03_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/04_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/05_assign"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/01_output"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/02_variables"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/03_input"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/04_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/01_module/05_auto"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/01_if"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/02_if_else"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/03_switch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/01_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/02_for"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/03_do_while"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/04_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/05_value_and_reference_params"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/06_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/03_module/07_vectors_for_ranged"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/01_bank"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/04_module/02_gui"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/07_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/08_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/09_module"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/01_shapes"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/10_module/02_clock"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/01_ref_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/02_dynamic_memory"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/03_memory_leak"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/04_dangling_pointer"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/05_raii"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/06_destructors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/07_class_copy"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/08_rule_of_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/11_module/09_rule_of_5"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/01_arrays_mem"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/02_arrays_access"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/03_arrays_for_range"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/04_arrays_pointers"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/05_arrays_functions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/06_arrays_char"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/07_arrays_dyn_ch"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/08_arrays_dyn_1"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/09_arrays_dyn_2"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/12_module/10_arrays_dyn_3"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/13_module/01_recursion"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/02_decisions"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/03_iteration"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/04_vectors"/>
+					<Add directory="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/tic_tac_toe"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 hw_01_library/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/cmake-build-debug/src/homework/01_expressions/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions/expressions.cpp">
+			<Option target="hw_01_exe"/>
+			<Option target="hw_01_library"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions/expressions.h">
+			<Option target="hw_01_library"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions/main.cpp">
+			<Option target="hw_01_exe"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\classwork\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/classwork/02_assign/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\classwork\02_assign\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\examples\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\examples\02_module\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/01_if/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\examples\02_module\01_if\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/02_if_else/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\examples\02_module\02_if_else\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/examples/02_module/03_switch/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\examples\02_module\03_switch\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\homework\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/src/homework/01_expressions/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\homework\01_expressions\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/test/classwork_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\classwork_test\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/test/classwork_test/02_assign_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\classwork_test\02_assign_test\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/test/examples_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\examples_test\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/test/examples_test/02_module_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\examples_test\02_module_test\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/test/homework_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\homework_test\"/>
+		</Unit>
+		<Unit filename="/Users/nicole_gibsonmbp/Desktop/Prog2/acc-cosc-1337-spring-2020-nikkig124/test/homework_test/01_expressions_test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\homework_test\01_expressions_test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

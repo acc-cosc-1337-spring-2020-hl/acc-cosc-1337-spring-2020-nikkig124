@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libex_02_03_library.a  CMakeFiles/ex_02_03_library.dir/switch.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libex_02_03_library.a
