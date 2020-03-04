@@ -32,3 +32,4 @@
 *.app
 /.vs
 .vscode/settings.json
+/cmake-build-debug/
