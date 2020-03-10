@@ -57,5 +57,6 @@ TEST_CASE("Test check game over function") {
 	game.mark_board(7);
 	game.mark_board(9);
 
+
 	REQUIRE(game.game_over() == true);
 }

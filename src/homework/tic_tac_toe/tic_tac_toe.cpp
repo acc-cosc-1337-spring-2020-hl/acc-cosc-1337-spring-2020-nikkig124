@@ -3,7 +3,7 @@
 using std::string;
 
 void TicTacToe::start_game(string first_player){
-	clear_board();
+	
     if(first_player == "X"){
         player = "X";
     }
@@ -13,6 +13,8 @@ void TicTacToe::start_game(string first_player){
     else{
         throw XOException("Entry must be X or O");
     }
+	//clear_board();
+	display_board();
 
 }
 

@@ -45,6 +45,7 @@ int main()
                 cin >> board_selection;
                 game.mark_board(board_selection);
                 mark_board_success = true;
+				game.display_board();
 
             } catch (XOException &ex) {
                 cout << ex.get_message() << "\n";
