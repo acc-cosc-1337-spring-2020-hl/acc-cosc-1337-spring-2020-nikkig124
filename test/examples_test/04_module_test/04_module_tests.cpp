@@ -60,3 +60,9 @@ TEST_CASE("test open on account that is open") {
 
 
 }
+
+TEST_CASE("test rate") {
+	BankAccount account(100);
+
+	REQUIRE(account.get_rate() == 0.025);
+}

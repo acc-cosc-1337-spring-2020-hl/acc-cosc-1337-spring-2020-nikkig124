@@ -8,8 +8,14 @@ using std::cout;
 int main()
 {
 	
-	BankAccount account = 60;
-	cout << account.get_balance();
+	BankAccount account(60);
+
+	display_balance(account);
+
+	cout << account;
+
+	std::cin >> account;
+
 	int balance = account.get_balance();
 
 

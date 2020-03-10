@@ -13,3 +13,11 @@ void Rect::calculate_area()
 
 
 }
+
+ostream & operator<<(ostream & out, Rect & r)
+{
+	out << "Area is: " << r.area << "\n";
+
+	return out;
+
+}

@@ -38,3 +38,24 @@ TEST_CASE("Test mark board function"){
 
     REQUIRE(game.get_player() == "O");
 }
+
+TEST_CASE("Test check game over function") {
+	TicTacToe game;
+
+	game.start_game("X");
+
+	REQUIRE(game.game_over() == false);
+
+	game.mark_board(1);
+	REQUIRE(game.game_over() == false);
+	game.mark_board(2);
+	game.mark_board(3);
+	game.mark_board(4);
+	game.mark_board(5);
+	game.mark_board(6);
+	game.mark_board(8);
+	game.mark_board(7);
+	game.mark_board(9);
+
+	REQUIRE(game.game_over() == true);
+}
