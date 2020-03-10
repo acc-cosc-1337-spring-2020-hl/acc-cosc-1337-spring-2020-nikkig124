@@ -14,10 +14,8 @@ void Rect::calculate_area()
 
 }
 
-ostream & operator<<(ostream & out, Rect & r)
-{
-	out << "Area is: " << r.area << "\n";
+std::ostream &operator<<(std::ostream &out, const Rect &r) {
 
-	return out;
-
+    out << "\nArea is: " << r.area << "\n";
+    return out;
 }

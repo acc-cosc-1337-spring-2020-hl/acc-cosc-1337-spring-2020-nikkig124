@@ -4,8 +4,6 @@ has one public function area that returns the area of the rectangle, and one pri
 that calculates area of the rectangle.  The class has 3 int private variables area, width, and height.
 */
 #include <iostream>
-using std::ostream;
-
 class Rect {
 
 public: 
@@ -14,7 +12,7 @@ public:
 	};
 
 	int get_area() const{ return area; }
-	friend ostream& operator<<(ostream& out, Rect& r);
+    friend std::ostream& operator<<(std::ostream& out, const Rect& r);
 
 private:
 	int width;

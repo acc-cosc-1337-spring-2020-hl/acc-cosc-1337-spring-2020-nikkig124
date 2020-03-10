@@ -18,9 +18,11 @@ Iterate the vector and display the Area for each Rectangle on one line and the t
 */
 int main()
 {
-	vector<Rect> rectangles{ Rect(4,5), Rect(10, 10), Rect(100, 10) };
+	//vector<Rect> rects{ Rect(4,5), Rect(10, 10), Rect(100, 10) };
+	vector<Rect> rects {Rect(4,5), Rect(10,10), Rect(100,10)};
+
 	cout << "list of areas : \n";
-	for (auto rec : rectangles) {
+	for (auto rec : rects) {
 		//cout << rec.get_area() << "\n";
 		cout << rec;
 	}
