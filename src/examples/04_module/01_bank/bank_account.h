@@ -7,7 +7,7 @@ class BankAccount
 public:
 	BankAccount() = default;
 	BankAccount(int b) : balance{b} {};
-	int get_balance() const { return balance; }
+	virtual int get_balance() const { return balance; }
 	void deposit(int amount);
 	void withdraw(int amount);
 	void open(int amount);
@@ -16,10 +16,15 @@ public:
     friend std::ostream& operator<<(std::ostream& out, const BankAccount& b);
     friend std::istream& operator>>(std::istream& in, BankAccount& b);
 
-private:
+protected:
+
 	int balance{ 0 };
+	
+	
+private:
+	static double rate;
 	const int min_open_balance = 25;
-    static double rate;
+
     static double init_rate() { return .025; }
 };
 

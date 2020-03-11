@@ -1,38 +1,24 @@
 #include "bank_account.h"
+#include "checking_account.h"
+#include "savings_account.h"
 #include <iostream>
 #include <vector>
 
+using std::unique_ptr;
 using std::vector;
 using std::cout;
+using std::reference_wrapper;
+using std::make_unique;
 
 int main()
 {
-	
-	BankAccount account(60);
+	SavingsAccount s(200);
+	CheckingAccount c(100);
 
-	display_balance(account);
+	//get balance is virtual in the abstract class
+	vector<reference_wrapper<BankAccount>> acts{ s,c };
 
-	cout << account;
-
-	std::cin >> account;
-
-	int balance = account.get_balance();
-
-
-	cout << "balance: " << balance << "\n";
-
-	try {
-		account.withdraw(15);
+	for (auto account_ref : acts) {
+		cout << account_ref.get().get_balance() << "\n";
 	}
-	catch (InvalidAmountException ex) {
-		std::cout << ex.get_message();
-	}
-
-	vector<BankAccount> accounts{ BankAccount(100), BankAccount(600), BankAccount(500), BankAccount(350) };
-	cout << "\n";
-	for (auto act : accounts) {
-		cout << act.get_balance() << "\n";
-	}
-
-	return 0;
 }

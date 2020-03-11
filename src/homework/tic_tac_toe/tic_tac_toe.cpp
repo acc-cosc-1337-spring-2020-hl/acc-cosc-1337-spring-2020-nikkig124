@@ -1,6 +1,7 @@
 #include "tic_tac_toe.h"
 #include <iostream>
 using std::string;
+using std::cout;
 
 void TicTacToe::start_game(string first_player){
 	
@@ -40,12 +41,10 @@ bool TicTacToe::game_over()
 
 void TicTacToe::display_board() const
 {
-	for (int i = 1; i <= pegs.size(); i++) {
-		if (i % 3) {
-			std::cout << "\n";
-		}
+	cout << "\n";
 
-		std::cout << pegs[i - 1] << " | ";
+	for (std::size_t i = 0; i < 9; i += 3) {
+		cout << pegs[i] << " | " << pegs[i + 1] << " | " <<<< pegs[i + 2] << "\n";
 	}
 }
 
