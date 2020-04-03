@@ -1,3 +1,5 @@
+//#ifndef TIC_TAC_TOE_H
+
 #include <string>
 #include<vector>
 using std::string;
@@ -25,6 +27,16 @@ private:
 	
 	void clear_board();
 
+
+	bool check_column_win();
+
+	bool check_row_win();
+
+	bool check_diagonal_win();
+
+	void set_winner();
+	
+	string winner= "C";
 };
 
 class XOException{

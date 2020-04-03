@@ -5,53 +5,60 @@ using std::cout; using std::cin; using std::string;
 
 int main() 
 {
-    TicTacToe game;
-    string x_prompt = "X's TURN \n";
-    string o_prompt = "Os TURN\n";
-    string first_player;
-    int choice = 0;
+	int choice = 0;
 
-
-
-    bool first_player_success = false;
-    while(!first_player_success){
-        try {
-            cout<< "Enter X or O to choose the first player \n";
-            cin >> first_player;
-            game.start_game(first_player);
-            first_player_success = true;
-        }catch (XOException &ex){
-            cout << ex.get_message() << "\n";
-            cout << "try again \n";
-        }
-    }
-
-	//implemetn game over and display board
     do {
+		TicTacToe game;
+		string x_prompt = "X's TURN \n";
+		string o_prompt = "Os TURN\n";
+		string first_player;
+   
+
+
+		bool first_player_success = false;
+		while(!first_player_success){
+			try {
+				cout<< "Enter X or O to choose the first player \n";
+				cin >> first_player;
+				game.start_game(first_player);
+				first_player_success = true;
+			}catch (XOException &ex){
+				cout << ex.get_message() << "\n";
+				cout << "try again \n";
+			}
+		}
+    
         int board_selection=0;
 
-        if(game.get_player()=="X"){
-            cout << x_prompt;
-        }else {
-            cout<< o_prompt;
-        }
+       
+		while (!game.game_over()) {
+			if (game.get_player() == "X") {
+				cout << x_prompt;
+			}
+			else {
+				cout << o_prompt;
+			}
+			bool mark_board_success = false;
 
-        bool mark_board_success = false;
+			while (!mark_board_success) {
 
-        while (!mark_board_success){
+				try {
+					cout << "Mark the board using 1-9 \n";
+					cin >> board_selection;
+					game.mark_board(board_selection);
+					mark_board_success = true;
+					game.display_board();
+					if (game.game_over()) {
+						cout << "winner";
+					}
 
-            try {
-                cout << "Mark the board using 1-9 \n";
-                cin >> board_selection;
-                game.mark_board(board_selection);
-                mark_board_success = true;
-				game.display_board();
-
-            } catch (XOException &ex) {
-                cout << ex.get_message() << "\n";
-                cout << "try again \n";
-            }
-        }
+				}
+				catch (XOException &ex) {
+					cout << ex.get_message() << "\n";
+					cout << "try again \n";
+				}
+			}
+		}
         cout << "\n";
         cout << "Enter 0 to continue the game \n";
         cin >> choice;
