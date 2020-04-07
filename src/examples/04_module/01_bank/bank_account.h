@@ -1,39 +1,42 @@
-//bank_account.h
-#include <string>
-using std::string;
+// bank_account.h
+#include<iostream>
+#include<string>
+#ifndef BANK_ACCOUNT_H //header guards
+#define BANK_ACCOUNT_H
 
 class BankAccount
 {
 public:
 	BankAccount() = default;
-	BankAccount(int b) : balance{b} {};
-	virtual int get_balance() const { return balance; }
+	explicit BankAccount(int b) : balance{ b } {}
+	//pure virtual function
+	//any class with a pure virtual function is an abstract class
+	virtual int get_balance() const = 0;// { return balance; }
 	void deposit(int amount);
 	void withdraw(int amount);
 	void open(int amount);
-    double get_rate() { return rate; }
-    friend void display_balance(const BankAccount& b);
-    friend std::ostream& operator<<(std::ostream& out, const BankAccount& b);
-    friend std::istream& operator>>(std::istream& in, BankAccount& b);
+	double get_rate()const { return rate; }
+	friend void display_balance(const BankAccount& b);
+	friend std::ostream& operator<<(std::ostream& out, const BankAccount& b);
+	friend std::istream& operator>>(std::istream& in, BankAccount& b);
 
 protected:
-
 	int balance{ 0 };
-	
-	
+
 private:
+
+	const int min_balance_to_open{ 25 };
 	static double rate;
-	const int min_open_balance = 25;
-
-    static double init_rate() { return .025; }
+	static double init_rate() { return .025; }
 };
 
-class InvalidAmountException
+class InvalidAmount
 {
-public: 
-	InvalidAmountException(std::string msg) : message{ msg } {}
-	std::string get_message() const { return message; }
-private: 
+public:
+	InvalidAmount(std::string msg) : message{ msg } {}
+	std::string get_message()const { return message; }
+private:
 	std::string message;
-
 };
+
+#endif // !BANK_ACCOUNT_H

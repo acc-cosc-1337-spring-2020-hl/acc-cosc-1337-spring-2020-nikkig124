@@ -3,6 +3,11 @@
 
 
 //bank_account.cpp
+/*
+int BankAccount::get_balance() {
+	return balance;
+}*/
+
 
 void BankAccount::deposit(int amount)
 {	

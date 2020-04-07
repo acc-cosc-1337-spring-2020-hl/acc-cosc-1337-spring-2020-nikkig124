@@ -1,9 +1,13 @@
-//checking_account.h
+
 #include "bank_account.h"
-class CheckingAccount : public BankAccount 
+#include<iostream>
+#ifndef CHECKING_ACCOUNT_H
+#define CHECKING_ACCOUNT_H
+class CheckingAccount : public BankAccount
 {
 public:
 	CheckingAccount() = default;
-	explicit CheckingAccount(int b) : BankAccount(b) {}
-	//int get_balance() const { return balance * (1 + get_rate()); }
+	explicit CheckingAccount(int b) : BankAccount(b) {}  //Initializes starting balance from BankAccount class
+	int get_balance()const { return balance * (1 + get_rate()); }
 };
+#endif CHECKING_ACCOUNT_H
