@@ -60,6 +60,7 @@ TEST_CASE("Check 1 to 9 diagional win") {
 	game.mark_board(5);//X
 
 	REQUIRE(game.game_over() == true);
+	REQUIRE(game.get_winner() == "X");
 }
 TEST_CASE("Check 3 to 7 diagional win") {
 	TicTacToe game;
@@ -77,6 +78,8 @@ TEST_CASE("Check 3 to 7 diagional win") {
 	game.mark_board(7);
 
 	REQUIRE(game.game_over() == true);
+	
+	REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Check first column win") {
@@ -97,6 +100,7 @@ TEST_CASE("Check first column win") {
 		game.mark_board(7);//X
 
 		REQUIRE(game.game_over() == true);
+		REQUIRE(game.get_winner() == "X");
 }
 TEST_CASE("Check secind column win") {
 	TicTacToe game;
@@ -116,12 +120,13 @@ TEST_CASE("Check secind column win") {
 	game.mark_board(8);//X
 
 	REQUIRE(game.game_over() == true);
+	REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Check third column win") {
 	TicTacToe game;
 
-	game.start_game("X");
+	game.start_game("O");
 	//O X O
 	//X X
 	//X O
@@ -136,12 +141,13 @@ TEST_CASE("Check third column win") {
 	game.mark_board(9);//X
 
 	REQUIRE(game.game_over() == true);
+	REQUIRE(game.get_winner() == "O");
 }
 
 TEST_CASE("Check first row win") {
 	TicTacToe game;
 
-	game.start_game("X");
+	game.start_game("O");
 	//X X X
 	//X O O
 	//O O X
@@ -156,6 +162,7 @@ TEST_CASE("Check first row win") {
 	game.mark_board(3); //X
 
 	REQUIRE(game.game_over() == true);
+	REQUIRE(game.get_winner() == "O");
 }
 
 TEST_CASE("Check second row win") {
@@ -176,12 +183,13 @@ TEST_CASE("Check second row win") {
 	game.mark_board(6); //X
 
 	REQUIRE(game.game_over() == true);
+	REQUIRE(game.get_winner() == "X");
 }
 
 TEST_CASE("Check third row win") {
 	TicTacToe game;
 
-	game.start_game("X");
+	game.start_game("O");
 	//X X X
 	//X O O
 	//O O X
@@ -196,6 +204,7 @@ TEST_CASE("Check third row win") {
 	game.mark_board(9); //X
 
 	REQUIRE(game.game_over() == true);
+	REQUIRE(game.get_winner() == "O");
 }
 
 

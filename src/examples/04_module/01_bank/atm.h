@@ -7,16 +7,17 @@
 
 #ifndef ATM_H
 #define ATM_H
+#include<memory>
 
 
 class ATM
 {
 public:
-	ATM(Customer& c) : customer{ c }
+	ATM(Customer& c) : customer{ std::move(c) }
 	{
 
 	}
-	friend std::ostream& operator<<(std::ostream& out, const Customer& c);
+	friend std::ostream& operator<<(std::ostream& out, const ATM& a);
 
 private:
 	Customer customer;

@@ -38,7 +38,7 @@ void BankAccount::open(int amount)
 		throw InvalidAmountException("Account already open, use deposit");
 	}
 
-	if (amount >= min_open_balance) {
+	if (amount >= min_balance_to_open) {
 		deposit(amount);
 	}
 	else {

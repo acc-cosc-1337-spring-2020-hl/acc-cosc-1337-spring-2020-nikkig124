@@ -1,4 +1,5 @@
 #include "tic_tac_toe.h"
+#include "tic_tac_toe_manager.h"
 #include <iostream>
 
 using std::cout; using std::cin; using std::string;
@@ -6,7 +7,7 @@ using std::cout; using std::cin; using std::string;
 int main() 
 {
 	int choice = 0;
-
+	TicTacToeManager game_manager;
     do {
 		TicTacToe game;
 		string x_prompt = "X's TURN \n";
@@ -21,15 +22,13 @@ int main()
 				cout<< "Enter X or O to choose the first player \n";
 				cin >> first_player;
 				game.start_game(first_player);
+				cout << game;
 				first_player_success = true;
 			}catch (XOException &ex){
 				cout << ex.get_message() << "\n";
 				cout << "try again \n";
 			}
 		}
-    
-        int board_selection=0;
-
        
 		while (!game.game_over()) {
 			if (game.get_player() == "X") {
@@ -43,25 +42,34 @@ int main()
 			while (!mark_board_success) {
 
 				try {
-					cout << "Mark the board using 1-9 \n";
-					cin >> board_selection;
-					game.mark_board(board_selection);
+					cin >> game;
 					mark_board_success = true;
-					game.display_board();
-					if (game.game_over()) {
-						cout << "winner";
-					}
 
 				}
 				catch (XOException &ex) {
 					cout << ex.get_message() << "\n";
 					cout << "try again \n";
 				}
+
+				cout << game;
+				
+				if (game.game_over()) {
+					cout << "winner :" << game.get_winner()<<"\n";
+				}
+				
 			}
+			
+			//mark_board_success = false;
+		
 		}
+		game_manager.save_game(game);
+		cout << game_manager;
         cout << "\n";
         cout << "Enter 0 to continue the game \n";
         cin >> choice;
+		if (choice != 0) {
+			cout << game_manager;
+		}
         cout << "\n";
 
     } while( choice == 0 );

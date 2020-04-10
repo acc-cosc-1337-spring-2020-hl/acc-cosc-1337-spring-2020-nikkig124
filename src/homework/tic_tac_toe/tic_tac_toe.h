@@ -1,4 +1,7 @@
-//#ifndef TIC_TAC_TOE_H
+#include "bank_account.h"
+#ifndef TIC_TAC_TOE_H
+#define TIC_TAC_TOE_H
+
 
 #include <string>
 #include<vector>
@@ -14,7 +17,11 @@ public:
     string get_player() const{ return player;}
 
 	bool game_over();
-	void display_board() const;
+
+	string get_winner() { return winner; }
+
+	friend std::ostream& operator<<(std::ostream & out, TicTacToe &game);
+	friend std::istream& operator>>(std::istream & in, TicTacToe &game);
 
 private:
     void set_next_player();
@@ -37,6 +44,8 @@ private:
 	void set_winner();
 	
 	string winner= "C";
+
+	bool tie = false;
 };
 
 class XOException{
@@ -48,3 +57,4 @@ private:
     string message;
 
 };
+#endif // TIC_TAC_TOE_H

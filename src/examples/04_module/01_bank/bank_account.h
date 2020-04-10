@@ -30,10 +30,11 @@ private:
 	static double init_rate() { return .025; }
 };
 
-class InvalidAmount
+
+class InvalidAmountException
 {
 public:
-	InvalidAmount(std::string msg) : message{ msg } {}
+	InvalidAmountException(std::string msg) : message{ msg } {}
 	std::string get_message()const { return message; }
 private:
 	std::string message;
