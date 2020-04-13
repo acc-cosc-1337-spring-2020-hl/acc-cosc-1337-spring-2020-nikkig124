@@ -52,15 +52,6 @@ bool TicTacToe::game_over()
 	return false;
 }
 
-void TicTacToe::display_board() const
-{
-	cout << "\n";
-
-	for (std::size_t i = 0; i < 9; i += 3) {
-		cout << pegs[i] << " | " << pegs[i + 1] << " | " << pegs[i + 2] << "\n";
-	}
-}
-
 void TicTacToe::set_next_player() {
     if (player == "X"){
         player = "O";
