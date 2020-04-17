@@ -1,4 +1,5 @@
 #include "tic_tac_toe.h"
+#include <math.h>
 #include <iostream>
 using std::string;
 using std::cout;
@@ -15,15 +16,13 @@ void TicTacToe::start_game(string first_player){
         throw XOException("Entry must be X or O");
     }
 	clear_board();
-
-
 }
 
 void  TicTacToe::mark_board(int position){
     if (player == ""){
         throw XOException("Must start the game first");
-    } else if (position < 1 || position > 9) {
-        throw XOException("entry must be 1 - 9");
+    } else if (position < 1 || position > pegs.size()) {
+        throw XOException("entry must be on the board");
 	}
 	else {
 		pegs[position - 1] = player;
@@ -50,6 +49,10 @@ bool TicTacToe::game_over()
 	}
 	
 	return false;
+}
+
+void TicTacToe::displayboard()
+{
 }
 
 void TicTacToe::set_next_player() {
@@ -79,40 +82,16 @@ void TicTacToe::clear_board()
 
 bool TicTacToe::check_column_win()
 {
-	string last_player;
-
-	for (int i = 0; i < 3; i++) {
-		if (player == pegs[i] && player == pegs[i + 3] && player == pegs[i + 6]) {
-			return true;
-		}
-	}
 	return false;
 }
 
 bool TicTacToe::check_row_win()
 {
-
-	for (int i = 0; i < 9; i += 3) {
-		if (player == pegs[i] && player == pegs[i + 1] && player == pegs[i + 2]) {
-				return true;
-		}
-	}
 	return false;
 }
 
 bool TicTacToe::check_diagonal_win()
 {
-
-	
-		
-	if (pegs[0] == player && pegs[8] == player && pegs[4] == player) {
-		return true;
-	}
-	
-	if (pegs[2] == player && pegs[6] == player && pegs[4] == player){
-		return true;
-	}
-	
 	return false;
 }
 
@@ -124,9 +103,9 @@ void TicTacToe::set_winner()
 std::ostream & operator<<(std::ostream & out, TicTacToe & game)
 {
 	out << "\n";
-
-	for (std::size_t i = 0; i < 9; i += 3) {
-		out << game.pegs[i] << " | " << game.pegs[i + 1] << " | " << game.pegs[i + 2] << "\n";
+	for (int i = 0; i < game.pegs.size(); i += 3) {
+		
+	out << game.pegs[i] << " | " << game.pegs[i + 1] << " | " << game.pegs[i + 2] << "\n";
 	}
 	return out;
 }
@@ -134,7 +113,8 @@ std::ostream & operator<<(std::ostream & out, TicTacToe & game)
 std::istream & operator>>(std::istream & in, TicTacToe & game)
 {
 	int board_selection;
-	cout << "Mark the board using 1-9 \n";
+	
+	cout << "Mark the board using the keypad \n";
 	in >> board_selection;
 	game.mark_board(board_selection);
 	return in;

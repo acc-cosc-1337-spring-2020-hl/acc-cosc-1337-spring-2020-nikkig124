@@ -8,7 +8,7 @@
 using std::unique_ptr;
 using std::vector;
 using std::cout;
-//using std::reference_wrapper;
+using std::reference_wrapper;
 using std::make_unique;
 using std::unique_ptr;
 

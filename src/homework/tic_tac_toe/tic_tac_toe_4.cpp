@@ -1,4 +1,8 @@
 #include "tic_tac_toe_4.h"
+#include<iostream>
+
+using std::cout;
+
 
 /*
 class function check_column_win
@@ -34,3 +38,68 @@ Win diagonally
 12,13,14, 15
 
 */
+
+bool TicTacToe4::check_column_win()
+{
+	string last_player;
+
+	for (int i = 0; i < 4; i++) {
+		if (player == pegs[i] && player == pegs[i + 4] && player == pegs[i + 8] && player == pegs[i + 12]) {
+			return true;
+		}
+	}
+	return false;
+}
+
+bool TicTacToe4::check_row_win()
+{
+
+	for (int i = 0; i < 16; i += 4) {
+		if (player == pegs[i] && player == pegs[i + 1] && player == pegs[i + 2] && player == pegs[i + 3]) {
+			return true;
+		}
+	}
+	return false;
+}
+
+bool TicTacToe4::check_diagonal_win()
+{
+	//0123
+	//4567
+	//8901
+	//2345
+	if (pegs[0] == player && pegs[5] == player && pegs[10]== player && player == pegs[15]) {
+		return true;
+	}
+
+	if (pegs[3] == player && pegs[6] == player && pegs[9] == player && player == pegs[12]) {
+		return true;
+	}
+
+	return false;
+}
+
+void TicTacToe4::displayboard() {
+	cout << "\n";
+	for (int i = 0; i < pegs.size(); i += 4) {
+		cout << pegs[i] << " | " << pegs[i + 1] << " | " << pegs[i + 2] << " | " << pegs[i + 3] << "\n";
+	}
+
+}
+
+std::ostream & operator<<(std::ostream & out, TicTacToe4 & game)
+{
+	out << "\n";
+	game.displayboard();
+	return out;
+}
+
+std::istream & operator>>(std::istream & in, TicTacToe4 & game)
+{
+	int board_selection;
+
+	cout << "Mark the board using the keypad \n";
+	in >> board_selection;
+	game.mark_board(board_selection);
+	return in;
+}
