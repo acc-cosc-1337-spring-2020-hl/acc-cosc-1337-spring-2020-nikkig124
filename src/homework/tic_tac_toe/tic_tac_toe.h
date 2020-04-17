@@ -21,7 +21,6 @@ public:
 
 	string get_winner() { return winner; }
 
-	virtual void displayboard();
 
 	friend std::ostream& operator<<(std::ostream & out, TicTacToe &game);
 	friend std::istream& operator>>(std::istream & in, TicTacToe &game);

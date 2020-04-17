@@ -79,18 +79,12 @@ bool TicTacToe4::check_diagonal_win()
 	return false;
 }
 
-void TicTacToe4::displayboard() {
-	cout << "\n";
-	for (int i = 0; i < pegs.size(); i += 4) {
-		cout << pegs[i] << " | " << pegs[i + 1] << " | " << pegs[i + 2] << " | " << pegs[i + 3] << "\n";
-	}
-
-}
-
 std::ostream & operator<<(std::ostream & out, TicTacToe4 & game)
 {
 	out << "\n";
-	game.displayboard();
+	for (int i = 0; i < game.pegs.size(); i += 4) {
+		out << game.pegs[i] << " | " << game.pegs[i + 1] << " | " << game.pegs[i + 2] << " | " << game.pegs[i + 3] << "\n";
+	}
 	return out;
 }
 
