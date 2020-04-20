@@ -2,25 +2,28 @@
 #include "catch.hpp"
 #include "tic_tac_toe_3.h"
 #include "tic_tac_toe_4.h"
+#include<memory>
+using std::unique_ptr; using std::make_unique;
+
 
 TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
 TEST_CASE("test start game function") {
-    TicTacToe3 game;
+	unique_ptr<TicTacToe> game = make_unique<TicTacToe3>();
 
-    REQUIRE(game.get_player() == "");
+    REQUIRE(game->get_player() == "");
 
-    REQUIRE_THROWS_AS(game.start_game("W"), XOException);
+    REQUIRE_THROWS_AS(game->start_game("W"), XOException);
 
-    game.start_game("O");
+    game->start_game("O");
 
-    REQUIRE(game.get_player() == "O");
+    REQUIRE(game->get_player() == "O");
 
-    game.mark_board(6);
+    game->mark_board(6);
 
-    REQUIRE(game.get_player() == "X");
+    REQUIRE(game->get_player() == "X");
 
 }
 

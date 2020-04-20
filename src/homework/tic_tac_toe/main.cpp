@@ -5,38 +5,36 @@
 #include <iostream>
 
 using std::cout; using std::cin; using std::string;
+using std::make_unique;
 
 int main() 
 {
 	int choice = 0;
 	//TicTacToeManager game_manager;
 	TicTacToeManager game_manager;
-	TicTacToe3 game3;
-	TicTacToe4 game4;
-	vector<reference_wrapper<TicTacToe>> main_games{ game3, game4 };
     do {
 		//TicTacToe game;
-		TicTacToe3 game3;
-		TicTacToe4 game4;
-		vector<reference_wrapper<TicTacToe>> main_games{ game3, game4 };
+		//TicTacToe3 game3;
+		//TicTacToe4 game4;
+
+		unique_ptr<TicTacToe> game;
+	
 		string x_prompt = "X's TURN \n";
 		string o_prompt = "Os TURN\n";
 		string first_player;
 		int size;
 		cout << "enter 4 for 4x4 game or any other key for default 3x3 game \n";
 		cin >> size;
+		int index = 0;
 		if (size == 4) {
-
-			game_manager.games.push_back(main_games.at(1));
+			
+			unique_ptr<TicTacToe> game = make_unique<TicTacToe4>();
+			
 		}
 		else { 
-			TicTacToe3 game3;
-			//cout << game;
-			//game_manager.games.push_back(game3);
-			game_manager.games.push_back(main_games.at(0));
+			unique_ptr<TicTacToe> game = make_unique<TicTacToe3>();
 		}
-	
-		reference_wrapper<TicTacToe> gameref = game_manager.games.back();
+
 
 
 		bool first_player_success = false;
@@ -44,7 +42,7 @@ int main()
 			try {
 				cout<< "Enter X or O to choose the first player \n";
 				cin >> first_player;
-				gameref.get().start_game(first_player);
+				game->start_game(first_player);
 				first_player_success = true;
 			}catch (XOException &ex){
 				cout << ex.get_message() << "\n";
@@ -52,9 +50,9 @@ int main()
 			}
 		}
 
-		while (!gameref.get().game_over()) {
+		while (!game->game_over()) {
 			
-			if (gameref.get().get_player() == "X") {
+			if (game->get_player() == "X") {
 				cout << x_prompt;
 			}
 			else {
@@ -65,7 +63,7 @@ int main()
 			while (!mark_board_success) {
 
 				try {
-					cin >> gameref.get();
+					cin >> *game;
 					mark_board_success = true;
 
 				}
@@ -74,15 +72,16 @@ int main()
 					cout << "try again \n";
 				}
 
-				cout << gameref.get();
+				cout << *game;
 				
-				if (gameref.get().game_over()) {
-					cout << "winner :" << gameref.get().get_winner()<<"\n";
+				if (game->game_over()) {
+					cout << "winner :" << game->get_winner()<<"\n";
 				}
 			}
 		}
-		game_manager.save_game(gameref.get());
+		game_manager.save_game(game);
 		cout << game_manager;
+		*game;
         cout << "\n";
         cout << "Enter 0 to continue the game \n";
         cin >> choice;

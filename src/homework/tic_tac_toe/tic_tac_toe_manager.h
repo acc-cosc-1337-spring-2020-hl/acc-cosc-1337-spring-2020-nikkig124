@@ -4,16 +4,16 @@
 #include "tic_tac_toe.h"
 #include <memory>
 using std::vector;
-using std::reference_wrapper;
+using std::unique_ptr;
 
 #ifndef TIC_TAC_TOE_MANAGER_H
 #define TIC_TAC_TOE_MANAGER_H
 
 class TicTacToeManager {
 public:
-	void save_game(TicTacToe b);
+	void save_game(unique_ptr<TicTacToe>& b);
 	friend std::ostream& operator<<(std::ostream & out, const TicTacToeManager &manager);
-	vector<reference_wrapper<TicTacToe>> games;
+	vector<unique_ptr<TicTacToe>> games;
 private:
 	
 	int x_win = 0;

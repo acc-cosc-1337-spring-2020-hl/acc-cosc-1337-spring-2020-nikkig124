@@ -51,10 +51,6 @@ bool TicTacToe::game_over()
 	return false;
 }
 
-void TicTacToe::displayboard()
-{
-}
-
 void TicTacToe::set_next_player() {
     if (player == "X"){
         player = "O";
