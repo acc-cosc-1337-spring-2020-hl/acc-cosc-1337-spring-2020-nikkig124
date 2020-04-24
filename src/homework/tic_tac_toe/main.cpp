@@ -11,34 +11,27 @@ int main()
 {
 	int choice = 0;
 	//TicTacToeManager game_manager;
-	TicTacToeManager game_manager;
+	unique_ptr<TicTacToeManager> game_manager;
     do {
-		//TicTacToe game;
-		//TicTacToe3 game3;
-		//TicTacToe4 game4;
 
 		unique_ptr<TicTacToe> game;
 	
-		string x_prompt = "X's TURN \n";
-		string o_prompt = "Os TURN\n";
-		string first_player;
 		int size;
 		cout << "enter 4 for 4x4 game or any other key for default 3x3 game \n";
 		cin >> size;
 		int index = 0;
 		if (size == 4) {
 			
-			unique_ptr<TicTacToe> game = make_unique<TicTacToe4>();
+			game = make_unique<TicTacToe4>();
 			
 		}
 		else { 
-			unique_ptr<TicTacToe> game = make_unique<TicTacToe3>();
+			game = make_unique<TicTacToe3>();
 		}
-
-
 
 		bool first_player_success = false;
 		while(!first_player_success){
+			string first_player;
 			try {
 				cout<< "Enter X or O to choose the first player \n";
 				cin >> first_player;
@@ -52,12 +45,7 @@ int main()
 
 		while (!game->game_over()) {
 			
-			if (game->get_player() == "X") {
-				cout << x_prompt;
-			}
-			else {
-				cout << o_prompt;
-			}
+			cout << game->get_player() + "'s turn \n";
 			bool mark_board_success = false;
 
 			while (!mark_board_success) {
@@ -75,13 +63,14 @@ int main()
 				cout << *game;
 				
 				if (game->game_over()) {
-					cout << "winner :" << game->get_winner()<<"\n";
+					cout << "winner : " << game->get_winner() <<"\n";
 				}
 			}
 		}
-		game_manager.save_game(game);
-		cout << game_manager;
-		*game;
+		
+		game_manager->save_game(game);
+		cout << *game_manager;
+		
         cout << "\n";
         cout << "Enter 0 to continue the game \n";
         cin >> choice;
