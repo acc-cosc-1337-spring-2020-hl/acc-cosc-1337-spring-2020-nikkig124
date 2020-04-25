@@ -8,9 +8,9 @@ using std::make_unique;
 
 void TicTacToeManager::save_game(unique_ptr<TicTacToe>& game)
 {
+	update_winner_count(game->get_winner());
 	games.push_back(std::move(game));
 	
-	update_winner_count(game->get_winner());
 }
 
 void TicTacToeManager::update_winner_count(string winner)
@@ -30,7 +30,7 @@ void TicTacToeManager::update_winner_count(string winner)
 std::ostream &operator<<(std::ostream &out, const TicTacToeManager &manager)
 	{
 		for (auto &game : manager.games) {
-			out << game;
+			out << *game;
 			out << "Winner: " << game->get_winner() << "\n\n";
 		}
 

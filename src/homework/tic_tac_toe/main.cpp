@@ -11,7 +11,7 @@ int main()
 {
 	int choice = 0;
 	//TicTacToeManager game_manager;
-	unique_ptr<TicTacToeManager> game_manager;
+	unique_ptr<TicTacToeManager> game_manager = make_unique<TicTacToeManager>();
     do {
 
 		unique_ptr<TicTacToe> game;
