@@ -7,6 +7,8 @@ public:
 	Vector(size_t sz);
 	Vector(const Vector& v); //copuy constructor
 	Vector& operator= (const Vector &v);
+	Vector(Vector&& v);
+	Vector& operator=(Vector&& v); //move assignement
 	size_t Size() const { return size; }
 	int& operator[](int i) { return nums[i]; } //assign value
 	int& operator[](int i) const { return nums[i]; } //get value
@@ -17,6 +19,7 @@ private:
 	int* nums;
 };
 
-#endif
 
+#endif
 void use_vector();
+Vector get_vector();

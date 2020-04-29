@@ -10,6 +10,7 @@ using std::string;
 class TicTacToe {
 
 public:
+	TicTacToe(std::vector<string> p, string win) : pegs{p}, winner{win} {}
 	explicit TicTacToe(int s) : pegs(s*s, " ") {}
     void start_game(string first_player);
 
@@ -21,6 +22,8 @@ public:
 
 	string get_winner() { return winner; }
 
+	std::vector<string> get_pegs() const { return pegs; }
+		
 
 	friend std::ostream& operator<<(std::ostream & out, TicTacToe &game);
 	friend std::istream& operator>>(std::istream & in, TicTacToe &game);

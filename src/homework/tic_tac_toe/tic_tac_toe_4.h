@@ -9,6 +9,7 @@ class TicTacToe4 : public TicTacToe {
 
 public:
 	TicTacToe4() :TicTacToe(4) {}
+	TicTacToe4(std::vector<string> p, string win) : TicTacToe(p, win) {};
 	friend std::ostream& operator<<(std::ostream & out, TicTacToe4 &game);
 	friend std::istream& operator>>(std::istream & in, TicTacToe4 &game);
 

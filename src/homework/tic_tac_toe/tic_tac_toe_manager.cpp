@@ -6,10 +6,19 @@
 using std::cout;
 using std::make_unique;
 
+TicTacToeManager::TicTacToeManager(TicTacToeData & d)
+{
+	games = d.get_games();
+	for (int i = 0; i < games.size(); i++) {
+		update_winner_count(games.at(i)->get_winner());
+	}
+}
+
 void TicTacToeManager::save_game(unique_ptr<TicTacToe>& game)
 {
 	update_winner_count(game->get_winner());
 	games.push_back(std::move(game));
+	data.save_games(games);
 	
 }
 

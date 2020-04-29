@@ -7,8 +7,8 @@
 class TicTacToe3 : public TicTacToe {
 
 public:
-	TicTacToe3():TicTacToe(3){}
-
+	TicTacToe3() :TicTacToe(3) {};
+	TicTacToe3(std::vector<string> p, string win) : TicTacToe(p, win) {};
 	friend std::ostream& operator<<(std::ostream & out, TicTacToe3 &game);
 	friend std::istream& operator>>(std::istream & in, TicTacToe3 &game);
 

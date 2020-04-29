@@ -3,6 +3,7 @@
 #include<vector>
 #include "tic_tac_toe.h"
 #include "tic_tac_toe_3.h"
+#include "tic_tac_toe_data.h"
 #include <memory>
 using std::vector;
 using std::unique_ptr;
@@ -12,7 +13,8 @@ using std::unique_ptr;
 
 class TicTacToeManager {
 public:
-	TicTacToeManager(){}
+	TicTacToeManager() = default;
+	TicTacToeManager(TicTacToeData& d);
 	void save_game(unique_ptr<TicTacToe>& game);
 	friend std::ostream& operator<<(std::ostream & out, const TicTacToeManager &manager);
 private:
@@ -21,6 +23,7 @@ private:
 	int o_wins = 0;
 	int ties = 0;
 	void update_winner_count(string winner);
+	TicTacToeData data;
 	
 };
 #endif // !TIC_TAC_TOE_MANAGER_H

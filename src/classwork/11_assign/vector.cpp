@@ -11,6 +11,7 @@ Vector::Vector(size_t sz)
 	}
 }
 
+//COPY CONSTRUCT
 //set ner class size to teh original array size
 //allocated a dynamic memory array of size elements
 //initalized all elements to value of original class
@@ -37,6 +38,26 @@ Vector & Vector::operator=(const Vector & v)
 
 	return *this;	
 }
+//use move source pointer
+//point move source pointer to nothing
+Vector::Vector(Vector && v) 
+	: size{ v.size }, nums{ v.nums }
+{
+	v.size = 0;
+	v.nums = nullptr;
+}
+
+Vector & Vector::operator=(Vector && v)
+{
+	//dont create memory
+	delete nums;
+	nums = v.nums;
+	size = v.size;
+	//changing pointers to help code run faster
+	v.nums = nullptr;
+	v.size = 0;
+	return *this;
+}
 
 Vector::~Vector()
 {
@@ -44,7 +65,22 @@ Vector::~Vector()
 	delete[] nums;
 }
 
+//void use_vector()
+//{
+//	Vector v(3);
+//}
+
 void use_vector()
 {
-	Vector v(3);
+	Vector *v = new Vector(3);  // does not call the destructor.
+	// If you allocate dynamic memory, you should release the moemery manually.
+
 }
+
+Vector get_vector()
+{
+	Vector v = Vector(3);
+	return v;
+}
+
+
