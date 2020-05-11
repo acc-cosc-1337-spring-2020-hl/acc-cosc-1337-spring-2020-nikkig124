@@ -70,17 +70,16 @@ int main()
 		}
 		
 		game_manager->save_game(game);
-		cout << *game_manager;
 		
         cout << "\n";
         cout << "Enter 0 to continue the game \n";
         cin >> choice;
-		if (choice != 0) {
-			cout << game_manager;
-		}
+		
         cout << "\n";
 
     } while( choice == 0 );
+
+	cout << *game_manager;
 
 	return 0;
 }
